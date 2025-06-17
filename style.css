@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins-Light", sans-serif;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+/* Header */
+.header-extra-informations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: azure;
+  padding: 6px;
+}
+.header-top-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(41, 132, 218);
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.header-top-left-side-contents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(59, 209, 72);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+nav ul li a:hover {
+  background-color: green;
+}
+nav ul li a:active {
+  background-color: darkgreen;
+}
+.header-logo {
+  width: 90px;
+  height: auto;
+}
+.header-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon img {
+  width: 65%;
+  height: auto;
+  display: block;
+}
+.social-icon:hover {
+  background-color: rgb(197, 197, 197);
+}
