@@ -6,6 +6,9 @@
 body {
   font-family: "Poppins-Light", sans-serif;
 }
+img {
+  display: block;
+}
 
 /* Fonts */
 @font-face {
@@ -21,6 +24,7 @@ body {
   width: 100%;
   background-color: azure;
   padding: 6px;
+  flex-wrap: wrap;
 }
 .header-top-contents {
   display: flex;
@@ -30,6 +34,7 @@ body {
   background-color: rgb(41, 132, 218);
   border-bottom: 2px solid black;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .header-top-left-side-contents {
   display: flex;
@@ -68,15 +73,24 @@ nav ul li a:active {
   height: auto;
   display: block;
 }
+.header-top-social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+.header-top-contacts {
+  display: flex;
+  gap: 30px;
+}
 .social-icon {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   border: 1px solid black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease;
 }
 .social-icon img {
   width: 65%;
@@ -85,4 +99,24 @@ nav ul li a:active {
 }
 .social-icon:hover {
   background-color: rgb(197, 197, 197);
+}
+
+/* Main */
+.main-details {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 35px 5% 0 5%;
+}
+.main-details-photo {
+  /* border: 2px solid black;
+  padding: 4px; */
+  text-align: center;
+  line-height: 20px;
+}
+.main-details-photo img {
+  width: 180px;
+  outline: 2px solid black;
+  outline-offset: 4px;
+  margin-bottom: 10px;
 }
