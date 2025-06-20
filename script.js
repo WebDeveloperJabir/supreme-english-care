@@ -39,3 +39,21 @@ function changeLanguage() {
     if (translationExists) el.textContent = translationExists;
   });
 }
+
+const videoLeftButton = document.getElementById("video-scroll-left-button");
+const videoRightButton = document.getElementById("video-scroll-right-button");
+const scrollContainer = document.querySelector(".main-video-frame");
+
+videoLeftButton.addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: -460,
+    behavior: "smooth",
+  });
+});
+
+videoRightButton.addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: 460,
+    behavior: "smooth",
+  });
+});

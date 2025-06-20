@@ -14,11 +14,13 @@
   <body>
     <header>
       <div class="header-extra-informations">
-        <div class="header-top-number">
+        <div class="header-top-number contact">
+          <img src="assets/images/phone.svg" alt="" />
           <p data-i18n="phone-number">+880123456789</p>
         </div>
-        <div class="header-top-email">
-          <p data-i18n="email">
+        <div class="header-top-email contact">
+          <img src="assets/images/email.svg" alt="" />
+          <p>
             <a href="mailto:info@supremeenglishcare.com"
               >info@supremeenglishcare.com</a
             >
@@ -58,10 +60,27 @@
         <div class="header-top-right-side-contents">
           <nav>
             <ul>
-              <li><a href="#" data-i18n="nav-home">Home</a></li>
-              <li><a href="#" data-i18n="nav-about">About</a></li>
-              <li><a href="#" data-i18n="nav-courses">Courses</a></li>
-              <li><a href="#" data-i18n="nav-contact">Contact</a></li>
+              <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+              <li>
+                <a data-i18n="nav-about">
+                  <div class="dropdown-icon">
+                    <p>&#9660;</p>
+                  </div>
+                  About</a
+                >
+                <ul class="dropdown">
+                  <li><a href="">About the Coaching</a></li>
+                  <li><a href="">Rules and Regulations</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Gallery</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="courses.html" data-i18n="nav-courses">Courses</a>
+              </li>
+              <li>
+                <a href="contact.html" data-i18n="nav-contact">Contact</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -141,25 +160,80 @@
           </div>
         </div>
       </div>
+      <div class="main-class-video">
+        <div class="main-class-video-place">
+          <div class="main-video-left-side-content">
+            <p>
+              We teach our students with much <strong>care</strong> and
+              <strong>dedication</strong>.
+            </p>
+          </div>
+          <div class="main-video-right-side-content">
+            <button id="video-scroll-left-button" class="video-scroll-button"><</button>
+            <div class="main-video-frame" id="main-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/yyBlyzGX7B8"
+                title="View Transition API Bangla Tutorial | New CSS Animation Power!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/4md_jiUnS_w?list=PLWpBH1LQ-4KrgAKG4k_xd8vIbVEyDo9ra"
+                title="Ali Theme Song 2 #AladdinNaamTohSunaHoga"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/t1gPLldhMXI?list=PLWpBH1LQ-4KrgAKG4k_xd8vIbVEyDo9ra"
+                title="Alley Cat"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/7HjDcv75spg"
+                title="MCP সার্ভার কি? সহজ কনসেপ্ট ও TypeScript SDK উদাহরণ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <button id="video-scroll-right-button" class="video-scroll-button">></button>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-details">
-        <img src="https://vatara-school.vercel.app/images/school-logo.svg">
+        <img src="https://vatara-school.vercel.app/images/school-logo.svg" />
         <h2>Supreme English Care</h2>
-        <p>Location: Dhaka, Bangladesh</p>
+        <p>Dhaka, Bangladesh</p>
+        <p>
+          A unique coaching center for learning and speaking English. Learn
+          English in an easier and joyful way.
+        </p>
       </div>
       <div class="footer-contacts">
-        <div class="header-top-number">
+        <h3>Contact Us:</h3>
+        <div class="header-top-number contact">
+          <img src="assets/images/phone.svg" alt="" />
           <p data-i18n="phone-number">Phone: +880123456789</p>
         </div>
-        <div class="header-top-email">
-          <p data-i18n="email">
+        <div class="header-top-email contact">
+          <img src="assets/images/email.svg" alt="" />E-mail:
+          <p style="margin-left: 3px">
             <a href="mailto:info@supremeenglishcare.com"
               >info@supremeenglishcare.com</a
             >
           </p>
         </div>
-        <div class="header-top-social-media-icons">
+        <div class="header-top-social-media-icons" style="margin-top: 10px">
           <div class="header-facebook-icon social-icon">
             <img src="assets/images/facebook.svg" alt="" />
           </div>
@@ -170,6 +244,9 @@
             <img src="assets/images/g-mail.svg" alt="" />
           </div>
         </div>
+      </div>
+      <div class="footer-copyright-area">
+        <p>Copyright © 2023 Supreme English Care. All rights reserved.</p>
       </div>
     </footer>
   </body>
